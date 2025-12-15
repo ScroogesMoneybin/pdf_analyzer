@@ -84,7 +84,7 @@ if __name__ == "__main__":
     st.image('./data.jpeg', width=400)
 
     st.subheader('AI LLM Question and Answering System')
-    st.write('This is an LLM document analysis program using AI. You can upload a document (.pdf, .txt, or .docx files) and use ChatGPT to analyze and answer questions about your document. In order to use, enter your ChatGPT API key (which is not stored or revealed to anyone) in the left-hand sidebar and upload a document to analyze. Be aware, ChatGPT charges a small amount to chunk and embed your file. Then select parameters (chunks and k-value) to determine how thoroughly to break up the document and inspect it. Then click the button. After processing your file, use the text box below to type in your questions regarding your file.')
+    st.write('This is an LLM document analysis program using AI. You can upload a document (.pdf, .txt, or .docx files) and use an LLM to analyze and answer questions about your document. In order to use, enter your Google API key (which is not stored or revealed to anyone) in the left-hand sidebar and upload a document to analyze. Be aware, the LLM charges a small amount to chunk and embed your file. Then select parameters (chunks and k-value) to determine how thoroughly to break up the document and inspect it. Then click the button. After processing your file, use the text box below to type in your questions regarding your file.')
 
     with st.sidebar:
         api_key = st.text_input('Input Your Gemini API Key:', type='password')
